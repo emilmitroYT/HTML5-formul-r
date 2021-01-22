@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <label for="name">Name: *</label>
+
+    <input type="text" id="name" name="name" required
+           minlength="4" maxlength="8" size="10">
+
+    <label for="email">Enter your email: *</label>
+
+    <input type="email" id="email"
+            pattern=".+@" size="30" required>
+           
+    <label for="start">födelse datum:</label>
+
+    <input type="date" id="start" name="trip-start"
+            value="0000-01-01"
+            min="1920-01-01" max="2021-01-22">
+    
+    <p>Vitsord:</p>
+
+    <div>
+        <input type="range" id="Vitsord" name="Vitsord"
+            min="1" max="3">
+    <label for="Vitsord">Vitsord för kursen (1-3)</label>
+    </div>
+    
+    <label for="text">Kommentar (1 to 800 characters):</label>
+
+    <input type="text" id="text" name="text" required
+       minlength="1" maxlength="800" size="100">
+
+    <div>
+        <input type="checkbox" id="Skicka gärna nyhetsbrev" name="Skicka gärna nyhetsbrev"
+            checked>
+        <label for="Skicka gärna nyhetsbrev">Skicka gärna nyhetsbrev</label>
+    </div>
+       
+            
+</body>
+</html>

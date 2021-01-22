@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Form_ovn2-style.css">
+
+</head>
+<body>
+    <h1>Registrering</h1>
+
+    <h4>Login uppgifter</h4>
+
+    <div>
+        <label for="Användarnamn">Användarnamn:</label>
+        <input type="text" id="Användarnamn" name="Användarnamn"
+               minlength="2" maxlength="12">
+        
+    </div>
+    
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password"
+               minlength="6" required>
+    </div>
+
+    <div>
+        <label for="Security pin">Security pin:</label>
+        <input type="Security pin" id="Security pin" name="Security pin"
+               maxlength="4" required>
+    </div>
+
+    <h4>Användaruppgifter</h4>
+
+    <label for="url">Website</label>
+  
+    <input type="url" name="url" id="url"
+       placeholder="https://yoursite.com"
+       pattern="https://.*" size="30"
+       required>
+
+       <p>Favorit Färg:</p>
+
+       <div>
+        <input type="color" id="Favorit färg" name="Favorit färg"
+               value="#e66465">
+        <label for="head"></label>
+    </div>
+
+    <label for="start">Starta prenumerationen:</label>
+
+    <input type="date" id="start" name="trip-start"
+       value="2018-9-10"
+       min="2019-10-09" max="2021-1-22">
+
+   
+
+   <p>Random list:</p>
+   
+    <input type="text" id="Random list" name="Random list" required
+             maxlength="20" size="15">
+       
+
+    
+
+
+
+
+</body>
+</html>
